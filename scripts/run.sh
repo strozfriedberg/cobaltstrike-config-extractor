@@ -63,7 +63,7 @@ run_pylint() {
 run_publish() {
     log "Building distribution packages" && \
         poetry build && \
-        log "Publishing to PyPI"
+        log "Publishing to PyPI" && \
         poetry publish "${@}"
 }
 
