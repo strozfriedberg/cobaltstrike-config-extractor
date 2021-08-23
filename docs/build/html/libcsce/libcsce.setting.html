@@ -1,0 +1,912 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>libcsce.setting module &mdash; libcsce 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-16x16.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="libcsce.typing module" href="libcsce.typing.html" />
+    <link rel="prev" title="libcsce.parser module" href="libcsce.parser.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> libcsce
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="libcsce.html">libcsce package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="libcsce.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="libcsce.error.html">libcsce.error module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce.parser.html">libcsce.parser module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">libcsce.setting module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce.typing.html">libcsce.typing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce.utils.html">libcsce.utils module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">libcsce</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="libcsce.html">libcsce package</a> &raquo;</li>
+        
+      <li>libcsce.setting module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/libcsce/libcsce.setting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-libcsce.setting">
+<span id="libcsce-setting-module"></span><h1>libcsce.setting module<a class="headerlink" href="#module-libcsce.setting" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">BeaconSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_override</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base config setting parser class.</p>
+<p>Each Beacon config is effectively an ordered (binary) list of settings, where each setting
+is assigned a number, or <code class="docutils literal notranslate"><span class="pre">position</span></code>, and a fundamental type (see: <a class="reference internal" href="#libcsce.setting.BeaconSettingType" title="libcsce.setting.BeaconSettingType"><code class="xref py py-class docutils literal notranslate"><span class="pre">BeaconSettingType</span></code></a>).
+The binary signature of each setting is six bytes and is comprised of its
+<code class="docutils literal notranslate"><span class="pre">position</span></code>, fundamental type, and length (sometimes called TLV format).
+This class implements the base functionality required to discover and parse Beacon config settings,
+including generating the setting signature and finding that signature in a buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – position number of the setting</p></li>
+<li><p><strong>length_override</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – manually set the setting length instead of using <code class="xref py py-attr docutils literal notranslate"><span class="pre">VALUE_TYPE.length</span></code>
+(required for string/binary settings)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Variables</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>length</strong> – length of the setting in bytes</p></li>
+<li><p><strong>position</strong> – position number of the setting</p></li>
+<li><p><strong>signature</strong> – six byte signature of the setting</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a class="reference internal" href="#libcsce.setting.BeaconSetting.VALUE_TYPE" title="libcsce.setting.BeaconSetting.VALUE_TYPE"><code class="xref py py-attr docutils literal notranslate"><span class="pre">VALUE_TYPE</span></code></a> class variable declares the fundamental type of the setting.
+It is arbitrarily set to <a class="reference internal" href="#libcsce.setting.BeaconSettingType.SHORT" title="libcsce.setting.BeaconSettingType.SHORT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.SHORT</span></code></a> in this class and
+must be overridden for non-<code class="docutils literal notranslate"><span class="pre">SHORT</span></code> settings.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSetting._from_setting_data">
+<span class="sig-name descname"><span class="pre">_from_setting_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSetting._from_setting_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the setting data.</p>
+<p>All logic for parsing settings should be contained within this function,
+and it <strong>must be overridden in child classes</strong>. <a class="reference internal" href="#libcsce.setting.BeaconSetting.from_config" title="libcsce.setting.BeaconSetting.from_config"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BeaconSetting.from_config()</span></code></a>
+implements basic logic to detect the setting signature and calls this method.
+If child class implementations can trigger exceptions, those should be documented in
+the child class docstrings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>setting_data</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code>]) – buffer to parse setting data from</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Parsed setting data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSetting.VALUE_TYPE">
+<span class="sig-name descname"><span class="pre">VALUE_TYPE</span></span><em class="property"><span class="pre">:</span> <a class="reference internal" href="#libcsce.setting.BeaconSettingType" title="libcsce.setting.BeaconSettingType"><span class="pre">libcsce.setting.BeaconSettingType</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#libcsce.setting.BeaconSetting.VALUE_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fundamental type of the setting (see: <a class="reference internal" href="#libcsce.setting.BeaconSettingType" title="libcsce.setting.BeaconSettingType"><code class="xref py py-class docutils literal notranslate"><span class="pre">BeaconSettingType</span></code></a>)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSetting.from_config">
+<span class="sig-name descname"><span class="pre">from_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSetting.from_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect setting signature in config and parse the setting data.</p>
+<p>If the setting signature is present in the config buffer, this method calls
+<a class="reference internal" href="#libcsce.setting.BeaconSetting._from_setting_data" title="libcsce.setting.BeaconSetting._from_setting_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BeaconSetting._from_setting_data()</span></code></a> with a buffer containing just the setting data,
+which is generated using the setting length (plus the signature). Otherwise returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+Consequently, the return type of this function in child classes should always be <code class="docutils literal notranslate"><span class="pre">Optional[T]</span></code>
+where <code class="docutils literal notranslate"><span class="pre">T</span></code> is the return type of <a class="reference internal" href="#libcsce.setting.BeaconSetting._from_setting_data" title="libcsce.setting.BeaconSetting._from_setting_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BeaconSetting._from_setting_data()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>config</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code>]) – config buffer to parse setting data from</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Parsed setting data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSetting.gen_signature">
+<span class="sig-name descname"><span class="pre">gen_signature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSetting.gen_signature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate six byte signature for the setting.</p>
+<p>The signature is comprised of its position number, integer representation of its fundamental type, and length.
+The signature cannot be static because the STR setting type is variable length.
+This function is used in the constructor, and must be called after setting position and length.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettingType">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">BeaconSettingType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSettingType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Cobalt Strike beacon settings types.</p>
+<p>Each Beacon setting has one of three basic types:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#libcsce.setting.BeaconSettingType.SHORT" title="libcsce.setting.BeaconSettingType.SHORT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.SHORT</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libcsce.setting.BeaconSettingType.INT" title="libcsce.setting.BeaconSettingType.INT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.INT</span></code></a></p></li>
+<li><p><a class="reference internal" href="#libcsce.setting.BeaconSettingType.STR" title="libcsce.setting.BeaconSettingType.STR"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.STR</span></code></a></p></li>
+</ol>
+<p>These types can mean different things depending on the setting.
+For example, the <code class="docutils literal notranslate"><span class="pre">SHORT</span></code> type is used for enum settings, like <code class="docutils literal notranslate"><span class="pre">beacontype</span></code>, that have a small number of options.
+Another example is that the <code class="docutils literal notranslate"><span class="pre">INT</span></code> type is used to store IPv4 addresses.
+Each custom setting parser has a setting type, which determines the setting’s signature,
+then implements parsing logic on top of that type.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettingType.INT">
+<span class="sig-name descname"><span class="pre">INT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#libcsce.setting.BeaconSettingType.INT" title="Permalink to this definition">¶</a></dt>
+<dd><p>4 byte integer, also used for IPv4 addresses and dates</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettingType.SHORT">
+<span class="sig-name descname"><span class="pre">SHORT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#libcsce.setting.BeaconSettingType.SHORT" title="Permalink to this definition">¶</a></dt>
+<dd><p>2 byte integer</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettingType.STR">
+<span class="sig-name descname"><span class="pre">STR</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#libcsce.setting.BeaconSettingType.STR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Variable length string or binary blob</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettingType.length">
+<span class="sig-name descname"><span class="pre">length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BeaconSettingType.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Length of beacon setting type.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#libcsce.setting.BeaconSettingType.STR" title="libcsce.setting.BeaconSettingType.STR"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.STR</span></code></a> types are variable length so this function returns <code class="docutils literal notranslate"><span class="pre">None</span></code> for them.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Length in bytes of the type</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.BeaconSettings">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">BeaconSettings</span></span><a class="headerlink" href="#libcsce.setting.BeaconSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">collections.OrderedDict</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a>]</p>
+<p>Beacon settings and parser mapping.</p>
+<p>Mapping of all known Beacon settings to the parsers for each.
+The structure of this <code class="docutils literal notranslate"><span class="pre">dict</span></code> is designed to mimic the Malleable C2 profile
+structure as <em>closely as possible</em>, and is used in <a class="reference internal" href="libcsce.parser.html#libcsce.parser.CobaltStrikeConfigParser.parse_config" title="libcsce.parser.CobaltStrikeConfigParser.parse_config"><code class="xref py py-meth docutils literal notranslate"><span class="pre">libcsce.parser.CobaltStrikeConfigParser.parse_config()</span></code></a>
+as the underlying parsing mechanism.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Examples</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">libcsce.setting</span> <span class="kn">import</span> <span class="n">BeaconSettings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">libcsce.parser</span> <span class="kn">import</span> <span class="n">CobaltStrikeConfigParser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">CobaltStrikeConfigParser</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;testdata/dll-sample-01.bin&quot;</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">beacon</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">config_buffer</span> <span class="o">=</span> <span class="n">beacon</span><span class="o">.</span><span class="n">gen_config_from_source</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">setting_name</span><span class="p">,</span> <span class="n">value_parser</span> <span class="ow">in</span> <span class="n">BeaconSettings</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="n">settings</span><span class="p">[</span><span class="n">setting_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_parser</span><span class="o">.</span><span class="n">from_config</span><span class="p">(</span><span class="n">config_buffer</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">except</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">pass</span> <span class="c1"># do something with the exception</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="p">[</span><span class="s2">&quot;beacontype&quot;</span><span class="p">]</span>
+<span class="go">[&#39;HTTP&#39;]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Settings 16-18 were apparently deprecated in Cobalt Strike 3.4.</p>
+</div>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Determine if <code class="docutils literal notranslate"><span class="pre">crypto_scheme</span></code> (setting 31) is an enum and what it controls.</p>
+</div>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>Determine what <code class="docutils literal notranslate"><span class="pre">http_post_chunk</span></code> (setting 28) and <code class="docutils literal notranslate"><span class="pre">uses_cookies</span></code> (setting 50) settings control.</p>
+</div>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">Todo</p>
+<p>Determine what setting 42 means and what it controls.</p>
+</div>
+<div class="admonition-todo admonition" id="id4">
+<p class="admonition-title">Todo</p>
+<p>For <code class="docutils literal notranslate"><span class="pre">process-inject</span> <span class="pre">-&gt;</span> <span class="pre">execute</span></code> (setting 51), determine whether <code class="docutils literal notranslate"><span class="pre">0x06</span></code> and <code class="docutils literal notranslate"><span class="pre">0x07</span></code> mean anything.</p>
+</div>
+<div class="admonition-todo admonition" id="id5">
+<p class="admonition-title">Todo</p>
+<p>Determine what setting 53 means and what it controls.</p>
+</div>
+<div class="admonition-todo admonition" id="id6">
+<p class="admonition-title">Todo</p>
+<p>Research the new DNS settings from Cobalt Strike 4.3 (rotation strategy and dns_*).</p>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.BoolSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">BoolSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">false_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.BoolSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.ShortIntSetting" title="libcsce.setting.ShortIntSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.ShortIntSetting</span></code></a></p>
+<p>Boolean setting.</p>
+<p>Parses a <a class="reference internal" href="#libcsce.setting.BeaconSettingType.SHORT" title="libcsce.setting.BeaconSettingType.SHORT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.SHORT</span></code></a> as a boolean, where <code class="docutils literal notranslate"><span class="pre">0</span></code> means <code class="docutils literal notranslate"><span class="pre">False</span></code> by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>false_value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – The integer value to use as <code class="docutils literal notranslate"><span class="pre">False</span></code> (any other value is considered <code class="docutils literal notranslate"><span class="pre">True</span></code>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.DateSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">DateSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_override</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.DateSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.IntSetting" title="libcsce.setting.IntSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.IntSetting</span></code></a></p>
+<p>Date setting.</p>
+<p>Used to parse the <code class="docutils literal notranslate"><span class="pre">kill_date</span></code> setting.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.EnumSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">EnumSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_map</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.EnumSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.ShortIntSetting" title="libcsce.setting.ShortIntSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.ShortIntSetting</span></code></a></p>
+<p>Enum setting.</p>
+<p>Parses a <a class="reference internal" href="#libcsce.setting.BeaconSettingType.SHORT" title="libcsce.setting.BeaconSettingType.SHORT"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.SHORT</span></code></a> and looks that value up in the provided <code class="docutils literal notranslate"><span class="pre">value_mapping</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value_map</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – mapping from integer values to string representations of those values</p>
+</dd>
+<dt class="field-even">Examples</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<p>Beacons support connecting to and using proxies, which is configurable in the Aggressor UI when generating a beacon.
+There are three options:</p>
+<ol class="arabic simple">
+<li><p>Use a direct connection to the C2</p></li>
+<li><p>Use the IE settings on the compromised (Windows) system</p></li>
+<li><p>Use a specific proxy server</p></li>
+</ol>
+<p>This setting is a good use case for a simple enum mapping:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">libcsce.setting</span> <span class="kn">import</span> <span class="n">EnumSetting</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">proxy_behavior</span> <span class="o">=</span> <span class="n">EnumSetting</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="mi">35</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">value_map</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">... </span>        <span class="mh">0x1</span><span class="p">:</span> <span class="s2">&quot;Use direct connection&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x2</span><span class="p">:</span> <span class="s2">&quot;Use IE settings&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x4</span><span class="p">:</span> <span class="s2">&quot;Use proxy server&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="p">},</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.FlagEnumSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">FlagEnumSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_map</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.FlagEnumSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.EnumSetting" title="libcsce.setting.EnumSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.EnumSetting</span></code></a></p>
+<p>Bitmask-like setting.</p>
+<p>Similar to an <a class="reference internal" href="#libcsce.setting.EnumSetting" title="libcsce.setting.EnumSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">EnumSetting</span></code></a> except that the integer value represents a
+bitmask of values from an enum, and thus this setting produces a list of options.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Examples</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Beacons can communicate with a Team Server or parent Beacon through different channels,
+including HTTP(S), DNS, SMB and TCP:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">libcsce.setting</span> <span class="kn">import</span> <span class="n">FlagEnumSetting</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">beacontype</span> <span class="o">=</span> <span class="n">FlagEnumSetting</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">value_map</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">... </span>        <span class="mh">0x0</span><span class="p">:</span> <span class="s2">&quot;HTTP&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x1</span><span class="p">:</span> <span class="s2">&quot;Hybrid HTTP DNS&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x2</span><span class="p">:</span> <span class="s2">&quot;SMB&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x4</span><span class="p">:</span> <span class="s2">&quot;TCP&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x8</span><span class="p">:</span> <span class="s2">&quot;HTTPS&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="mh">0x10</span><span class="p">:</span> <span class="s2">&quot;Bind TCP&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="p">},</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s currently unclear whether the <code class="docutils literal notranslate"><span class="pre">beacontype</span></code> setting is truly a bitmask or really just an enum.
+This may be updated in the future based on additional research.</p>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.HttpGetUriSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">HttpGetUriSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.HttpGetUriSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.ServerHostnameSetting" title="libcsce.setting.ServerHostnameSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.ServerHostnameSetting</span></code></a></p>
+<p>HTTP GET URI setting.</p>
+<p>The C2 server and HTTP GET URI are stored in the same setting as a comma-separated string
+of the form <code class="docutils literal notranslate"><span class="pre">&lt;hostname&gt;,&lt;http_get_uri&gt;</span></code>. This class parses the HTTP GET URI from that string,
+and <a class="reference internal" href="#libcsce.setting.ServerHostnameSetting" title="libcsce.setting.ServerHostnameSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServerHostnameSetting</span></code></a> parses the hostname.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.IntSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">IntSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_override</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.IntSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p>Int setting (4 byte integer).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.IpAddressSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">IpAddressSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_override</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.IpAddressSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.IntSetting" title="libcsce.setting.IntSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.IntSetting</span></code></a></p>
+<p>IPv4 address setting.</p>
+<p>Used to parse the <code class="docutils literal notranslate"><span class="pre">dns_idle</span></code> setting.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.Length256StrSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">Length256StrSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.Length256StrSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p><a class="reference internal" href="#libcsce.setting.BeaconSettingType.STR" title="libcsce.setting.BeaconSettingType.STR"><code class="xref py py-attr docutils literal notranslate"><span class="pre">BeaconSettingType.STR</span></code></a>-type setting with length 256 bytes.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2HttpClientHeadersSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">MalleableC2HttpClientHeadersSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2HttpClientHeadersSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.Length256StrSetting" title="libcsce.setting.Length256StrSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.Length256StrSetting</span></code></a></p>
+<p>HTTP client headers.</p>
+<p>HTTP headers can be used to mimic services like Amazon or CDNs that have standard headers in each request.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">http-get</span></code> and <code class="docutils literal notranslate"><span class="pre">http-post</span></code> setting groups’ <code class="docutils literal notranslate"><span class="pre">client</span></code> and <code class="docutils literal notranslate"><span class="pre">server</span></code> groups
+are stored in individual config settings with the following structure:</p>
+<p>&lt;arbitrary HTTP headers&gt;0x07&lt;data transform statements&gt;[,0x07&lt;data transform statements&gt;]</p>
+<p>Even though these data are stored in the same setting, <em>this class specifically parses
+the HTTP headers</em> and leaves parsing the data transform statements to other classes
+(see: <a class="reference internal" href="#libcsce.setting.MalleableC2TransformSetting" title="libcsce.setting.MalleableC2TransformSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">MalleableC2TransformSetting</span></code></a>). Splitting up parsing this way allow for
+less complex parser classes and more easily mimicing the Malleable C2 profile structure.</p>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2HttpClientTransformSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">MalleableC2HttpClientTransformSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">section_idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_transforms</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2HttpClientTransformSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.MalleableC2TransformSetting" title="libcsce.setting.MalleableC2TransformSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.MalleableC2TransformSetting</span></code></a></p>
+<p>HTTP client data transform statements.</p>
+<p>See <a class="reference internal" href="#libcsce.setting.MalleableC2HttpClientHeadersSetting" title="libcsce.setting.MalleableC2HttpClientHeadersSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">MalleableC2HttpClientHeadersSetting</span></code></a> for an explanation of the binary structure
+of the settings that contain data transform statements. <code class="docutils literal notranslate"><span class="pre">section_idx</span></code> is used to determine
+which transform statement section to parse if the setting contains more than one (i.e., <code class="docutils literal notranslate"><span class="pre">http-post</span> <span class="pre">-&gt;</span> <span class="pre">client</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>section_idx</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – data transforms section index (from 0)</p></li>
+<li><p><strong>exclude_transforms</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]]) – set of transform statement values to exclude, if any</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2ServerOutputTransformSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">MalleableC2ServerOutputTransformSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2ServerOutputTransformSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.MalleableC2TransformSetting" title="libcsce.setting.MalleableC2TransformSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.MalleableC2TransformSetting</span></code></a></p>
+<p>HTTP C2 server data transform statements.</p>
+<p>Malleable C2 profiles provide constructs for both Team Servers and Beacons to
+transform data before being sent. The <code class="docutils literal notranslate"><span class="pre">http-get</span> <span class="pre">-&gt;</span> <span class="pre">server</span> <span class="pre">-&gt;</span> <span class="pre">output</span></code> setting
+contains information required for the Beacon to decode data sent from the server
+by reversing the transform steps. For example, if the server appends <code class="docutils literal notranslate"><span class="pre">278</span></code> characters
+to each response to the Beacon, the Beacon must know to discard the last <code class="docutils literal notranslate"><span class="pre">278</span></code> characters
+of responses from the Team Server. See <a class="reference external" href="https://www.cobaltstrike.com/help-malleable-c2">https://www.cobaltstrike.com/help-malleable-c2</a> and
+<a class="reference external" href="https://usualsuspect.re/article/cobalt-strikes-malleable-c2-under-the-hood">https://usualsuspect.re/article/cobalt-strikes-malleable-c2-under-the-hood</a> for more information.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">MalleableC2Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2Transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Data transform language actions.</p>
+<p>Cobalt Strike has a data transform language that describes how the Team Server and Beacon
+should transform data before sending or receiving and interpreting it. Some statements take a parameter
+(<code class="docutils literal notranslate"><span class="pre">append</span></code>) and some don’t (<code class="docutils literal notranslate"><span class="pre">base64</span></code>). All data transforms end with a termination statement,
+of which there are four (see <a class="reference internal" href="#libcsce.setting.MalleableC2Transform.is_termination_transform" title="libcsce.setting.MalleableC2Transform.is_termination_transform"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MalleableC2Transform.is_termination_transform()</span></code></a>).
+The <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Transform</span> <span class="pre">Language</span></code> section on the
+<a class="reference external" href="https://cobaltstrike.com/help-malleable-c2">Malleable C2 support page</a>
+has a listing of all the transforms and more information on how they’re used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Need to determine what <code class="docutils literal notranslate"><span class="pre">9</span></code> and <code class="docutils literal notranslate"><span class="pre">10</span></code> mean, and if there are values above <code class="docutils literal notranslate"><span class="pre">15</span></code>.</p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.APPEND">
+<span class="sig-name descname"><span class="pre">APPEND</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.APPEND" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">append</span> <span class="pre">&quot;&lt;string&gt;&quot;</span></code> -&gt; remove last LEN(<code class="docutils literal notranslate"><span class="pre">&lt;string&gt;</span></code>) characters</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.BASE64">
+<span class="sig-name descname"><span class="pre">BASE64</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.BASE64" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">base64</span></code> -&gt; Base64 decode</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.BASE64URL">
+<span class="sig-name descname"><span class="pre">BASE64URL</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.BASE64URL" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">base64url</span></code> -&gt; URL-safe Base64 decode</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.BUILD">
+<span class="sig-name descname"><span class="pre">BUILD</span></span><em class="property"> <span class="pre">=</span> <span class="pre">7</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.BUILD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purpose unknown</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.HEADER">
+<span class="sig-name descname"><span class="pre">HEADER</span></span><em class="property"> <span class="pre">=</span> <span class="pre">6</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">header</span> <span class="pre">&quot;&lt;name&gt;&quot;</span></code> -&gt; store data in HTTP header <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> (HTTP comms)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.MASK">
+<span class="sig-name descname"><span class="pre">MASK</span></span><em class="property"> <span class="pre">=</span> <span class="pre">15</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">mask</span></code> -&gt; XOR mask with random key</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.NETBIOS">
+<span class="sig-name descname"><span class="pre">NETBIOS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">8</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.NETBIOS" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">netbios</span></code> -&gt; netbios decode ‘a’</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.NETBIOSU">
+<span class="sig-name descname"><span class="pre">NETBIOSU</span></span><em class="property"> <span class="pre">=</span> <span class="pre">11</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.NETBIOSU" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">netbiosu</span></code> -&gt; netbios decode ‘A’</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.PARAMETER">
+<span class="sig-name descname"><span class="pre">PARAMETER</span></span><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.PARAMETER" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">parameter</span> <span class="pre">&quot;&lt;name&gt;&quot;</span></code> -&gt; store data in URI parameter <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> (HTTP comms)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.PREPEND">
+<span class="sig-name descname"><span class="pre">PREPEND</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.PREPEND" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">prepend</span> <span class="pre">&quot;&lt;string&gt;&quot;</span></code> -&gt; remove first LEN(<code class="docutils literal notranslate"><span class="pre">&lt;string&gt;</span></code>) characters</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.PRINT">
+<span class="sig-name descname"><span class="pre">PRINT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.PRINT" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">print</span></code> -&gt; send data as transaction body</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.STRREP">
+<span class="sig-name descname"><span class="pre">STRREP</span></span><em class="property"> <span class="pre">=</span> <span class="pre">14</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.STRREP" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">strrep</span> <span class="pre">&quot;&lt;find&gt;&quot;</span> <span class="pre">&quot;&lt;replace&gt;&quot;</span></code> -&gt; replace <code class="docutils literal notranslate"><span class="pre">&lt;find&gt;</span></code> with <code class="docutils literal notranslate"><span class="pre">&lt;replace&gt;</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.URI_APPEND">
+<span class="sig-name descname"><span class="pre">URI_APPEND</span></span><em class="property"> <span class="pre">=</span> <span class="pre">12</span></em><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.URI_APPEND" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">uri-append</span></code> -&gt; append data to URI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.has_associated_data">
+<span class="sig-name descname"><span class="pre">has_associated_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.has_associated_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform statement takes at least one parameter.</p>
+<p>Some transform statements take parameters, which means those parameters need to be parsed.
+This function can be used to determine whether a statement requires further parsing of parameter data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2Transform.is_termination_transform">
+<span class="sig-name descname"><span class="pre">is_termination_transform</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2Transform.is_termination_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform statement is a termination statement.</p>
+<p>All data transforms must end with a termination statement,
+so these statements indicate the end of parsing any transforms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2TransformSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">MalleableC2TransformSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2TransformSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.Length256StrSetting" title="libcsce.setting.Length256StrSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.Length256StrSetting</span></code></a></p>
+<p>Base class for parsing HTTP client and server data transform statements.</p>
+<p>Data transform statements and the associated parameters are stored consecutively in the buffer.
+This class implements common functionality for parsing transforms to their string versions,
+as close to how they appear in the Malleable C2 profile as possible.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2TransformSetting._gen_statement_from_transform">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">_gen_statement_from_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transform</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2TransformSetting._gen_statement_from_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a transform statement string.</p>
+<p>For transform statements that don’t take parameters, this function should just return
+the string version of that statement. For those that do, the parameter data should be parsed
+from the provided <code class="docutils literal notranslate"><span class="pre">stream</span></code>. <strong>Must be overridden in child classes</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transform</strong> (<a class="reference internal" href="#libcsce.setting.MalleableC2Transform" title="libcsce.setting.MalleableC2Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">MalleableC2Transform</span></code></a>) – data transform statement enum value</p></li>
+<li><p><strong>stream</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BytesIO</span></code>) – stream of setting data to parse parameter data from, if necessary</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string version of the transform statement</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.MalleableC2TransformSetting._gen_transforms_from_stream">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">_gen_transforms_from_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.MalleableC2TransformSetting._gen_transforms_from_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a list of transform statement strings.</p>
+<p>Calls <a class="reference internal" href="#libcsce.setting.MalleableC2TransformSetting._gen_statement_from_transform" title="libcsce.setting.MalleableC2TransformSetting._gen_statement_from_transform"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MalleableC2TransformSetting._gen_statement_from_transform()</span></code></a> after parsing the transform value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stream</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">BytesIO</span></code>) – stream of setting data to parse transform statements from</p></li>
+<li><p><strong>stream_length</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – length of the stream</p></li>
+<li><p><strong>value_format</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – <code class="docutils literal notranslate"><span class="pre">struct</span></code> format to use for unpacking transform statement values</p></li>
+<li><p><strong>exclude</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – transform statement values to exclude</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of string versions of the transform statements</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.NestedBeaconSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">NestedBeaconSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.NestedBeaconSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p>Nested mapping of beacon settings.</p>
+<p>Cobalt Strike Malleable C2 profiles contain “groups” of settings,
+such as <code class="docutils literal notranslate"><span class="pre">http-get</span></code>, that are nested under the group name in the profile.
+For example, the <code class="docutils literal notranslate"><span class="pre">http-get</span></code> group may look something like the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="o">-</span><span class="n">get</span> <span class="p">{</span>
+    <span class="nb">set</span> <span class="n">uri</span> <span class="s2">&quot;/foobar&quot;</span><span class="p">;</span>
+    <span class="n">client</span> <span class="p">{</span>
+        <span class="n">metadata</span> <span class="p">{</span>
+            <span class="n">base64</span><span class="p">;</span>
+            <span class="n">prepend</span> <span class="s2">&quot;user=&quot;</span><span class="p">;</span>
+            <span class="n">header</span> <span class="s2">&quot;Cookie&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This class allows for parsing the settings from the <code class="docutils literal notranslate"><span class="pre">http-get</span></code> and other groups
+into a nested <code class="docutils literal notranslate"><span class="pre">dict</span></code> structure that mimics the Malleable C2 profile itself.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>setting_map</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">BeaconSetting</span></code></a>]) – mapping of setting names to setting parsers (<a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">BeaconSetting</span></code></a>)</p>
+</dd>
+<dt class="field-even">Examples</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<p>Replicate the <code class="docutils literal notranslate"><span class="pre">http-get</span></code> structure in the example above:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">http_get</span> <span class="o">=</span> <span class="n">NestedBeaconSetting</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;uri&quot;</span><span class="p">:</span> <span class="n">HttpGetUriSetting</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
+        <span class="s2">&quot;client&quot;</span><span class="p">:</span> <span class="n">NestedBeaconSetting</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="n">MalleableC2HttpClientTransformSetting</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+            <span class="p">}</span>
+        <span class="p">),</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+<span class="c1"># use http_get to parse a config buffer with http_get.from_config(config_buffer)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="libcsce.setting.NestedBeaconSetting.from_config">
+<span class="sig-name descname"><span class="pre">from_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.NestedBeaconSetting.from_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect setting signature in config and parse the setting data.</p>
+<p>If the setting signature is present in the config buffer, this method calls
+<a class="reference internal" href="#libcsce.setting.BeaconSetting._from_setting_data" title="libcsce.setting.BeaconSetting._from_setting_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BeaconSetting._from_setting_data()</span></code></a> with a buffer containing just the setting data,
+which is generated using the setting length (plus the signature). Otherwise returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+Consequently, the return type of this function in child classes should always be <code class="docutils literal notranslate"><span class="pre">Optional[T]</span></code>
+where <code class="docutils literal notranslate"><span class="pre">T</span></code> is the return type of <a class="reference internal" href="#libcsce.setting.BeaconSetting._from_setting_data" title="libcsce.setting.BeaconSetting._from_setting_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BeaconSetting._from_setting_data()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>config</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code>]) – config buffer to parse setting data from</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Parsed setting data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.ProcessInjectionExecuteSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">ProcessInjectionExecuteSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_map</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.ProcessInjectionExecuteSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p>Win32 APIs to use when executing injected code.</p>
+<p>Once running on a system (post-exploitation), Beacons can perform a number of actions,
+one of which is running code by injecting it into other processes. The <code class="docutils literal notranslate"><span class="pre">process-inject</span> <span class="pre">-&gt;</span> <span class="pre">execute</span></code>
+setting determines the Win32 APIs that the Beacon will try depending on the injection context.
+See the <code class="docutils literal notranslate"><span class="pre">Process</span> <span class="pre">Injection</span></code> section at <a class="reference external" href="https://www.cobaltstrike.com/help-malleable-postex">https://www.cobaltstrike.com/help-malleable-postex</a>
+for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value_map</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – mapping of integer values to Win32 function names</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.ProcessInjectionTransformSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">ProcessInjectionTransformSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.ProcessInjectionTransformSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.Length256StrSetting" title="libcsce.setting.Length256StrSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.Length256StrSetting</span></code></a></p>
+<p>Process injection transform statements.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">process-inject</span> <span class="pre">-&gt;</span> <span class="pre">transform-x*</span></code> settings define the bytes
+that the Beacon will <code class="docutils literal notranslate"><span class="pre">prepend</span></code> or <code class="docutils literal notranslate"><span class="pre">append</span></code> to code injected into a process.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.ServerHostnameSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">ServerHostnameSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.ServerHostnameSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.Length256StrSetting" title="libcsce.setting.Length256StrSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.Length256StrSetting</span></code></a></p>
+<p>C2 server hostname setting.</p>
+<p>The C2 server and HTTP GET URI are stored in the same setting as a comma-separated string
+of the form <code class="docutils literal notranslate"><span class="pre">&lt;hostname&gt;,&lt;http_get_uri&gt;</span></code>. This class parses the hostname from that string,
+and <a class="reference internal" href="#libcsce.setting.HttpGetUriSetting" title="libcsce.setting.HttpGetUriSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">HttpGetUriSetting</span></code></a> parses the URI.</p>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">Todo</p>
+<p>Determine what happens when multiple C2 IPs/hostnames are present (if that’s possible).</p>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.ShortIntSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">ShortIntSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_override</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.ShortIntSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p>Short setting (2 byte integer).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="libcsce.setting.VariableLengthStringSetting">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">libcsce.setting.</span></span><span class="sig-name descname"><span class="pre">VariableLengthStringSetting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#libcsce.setting.VariableLengthStringSetting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#libcsce.setting.BeaconSetting" title="libcsce.setting.BeaconSetting"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.setting.BeaconSetting</span></code></a></p>
+<p>Variable length string or binary blob setting.</p>
+<p>All non-binary blobs are decoded using UTF-8.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is_binary</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – treat the setting data as a binary blob</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="libcsce.typing.html" class="btn btn-neutral float-right" title="libcsce.typing module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="libcsce.parser.html" class="btn btn-neutral float-left" title="libcsce.parser module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021 Aon plc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

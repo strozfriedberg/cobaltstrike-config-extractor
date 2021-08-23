@@ -1,0 +1,21 @@
+# Compiled Python files
+**/__pycache__
+
+# Mypy cache
+.mypy_cache
+
+# Python virtual environment
+**/*venv
+
+# Python Eggs
+**/*.egg-info/
+
+# Vim swap files
+**/*.swp
+**/*.swo
+
+# Ignore all test samples for now
+testdata/
+
+# Release packages
+dist/

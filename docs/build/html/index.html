@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Cobalt Strike Configuration Extractor and Parser &mdash; libcsce 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-16x16.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="libcsce package" href="libcsce/libcsce.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> libcsce
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="libcsce/libcsce.html">libcsce package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">libcsce</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Cobalt Strike Configuration Extractor and Parser</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cobalt-strike-configuration-extractor-and-parser">
+<h1>Cobalt Strike Configuration Extractor and Parser<a class="headerlink" href="#cobalt-strike-configuration-extractor-and-parser" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Pure Python library and set of scripts to extract and parse configurations (configs) from <a class="reference external" href="https://www.cobaltstrike.com/help-beacon">Cobalt Strike Beacons</a>.
+The library, <code class="docutils literal notranslate"><span class="pre">libcsce</span></code>, contains classes for building tools to work with Beacon configs.
+There are also two CLI scripts included that use the library to parse Beacon config data:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">csce</span></code>: Parses all known Beacon config settings to JSON,
+mimicing the <a class="reference external" href="https://cobaltstrike.com/help-malleable-c2">Malleable C2 profile</a> structure.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-cs-settings</span></code>: Attempts to find by brute-force the associated Cobalt Strike version, and all settings/their types, of a Beacon config.
+This script is useful for conducting research on Beacon samples.</p></li>
+</ol>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-from-pypi-preferred-method">
+<h3>Install from Pypi (preferred method)<a class="headerlink" href="#install-from-pypi-preferred-method" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pip install libcsce
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-from-github-with-pip">
+<h3>Install from GitHub with Pip<a class="headerlink" href="#install-from-github-with-pip" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pip install git+ssh://git@github.com/strozfriedberg/cobaltstrike-config-extractor.git#egg<span class="o">=</span>libcsce
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-from-cloned-repo">
+<h3>Install from Cloned Repo<a class="headerlink" href="#install-from-cloned-repo" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; git clone ssh://git@github.com/strozfriedberg/cobaltstrike-config-extractor.git
+&gt; <span class="nb">cd</span> libcsce
+&gt; pip install .
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>The only external non-development dependency is <a class="reference external" href="https://github.com/erocarrera/pefile">pefile</a>,
+which is required to decrypt Beacon configs from the <code class="docutils literal notranslate"><span class="pre">.data</span></code> section of PE files.
+Requires <strong>Python 3.6+</strong>.</p>
+<p>Development dependencies include those specified in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> as well as:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-poetry.org/docs/">Poetry</a></p></li>
+<li><p><a class="reference external" href="https://www.gnu.org/software/make/">Make</a></p></li>
+</ul>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="csce">
+<h3>csce<a class="headerlink" href="#csce" title="Permalink to this headline">¶</a></h3>
+<p>Both of the CLI scripts support extracting Beacon configs from PE files (DLLs/EXEs) and memory dumps where a Beacon was running.
+To parse a Beacon PE file to JSON, use <code class="docutils literal notranslate"><span class="pre">csce</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; csce --pretty &lt;path/to/file.<span class="o">{</span>exe,dll,bin,dmp<span class="o">}</span>&gt;
+</pre></div>
+</div>
+<p>By default, the script will try to parse the Beacon as version <code class="docutils literal notranslate"><span class="pre">3</span></code> and, if that fails, try version <code class="docutils literal notranslate"><span class="pre">4</span></code>.
+You can specify a version manually via the <code class="docutils literal notranslate"><span class="pre">-v</span></code> flag to save cycles if you know the Beacon is version <code class="docutils literal notranslate"><span class="pre">4</span></code>
+(using <code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">3</span></code> doesn’t technically save cycles because the script tries that version first by default).</p>
+</div>
+<div class="section" id="list-cs-settings">
+<h3>list-cs-settings<a class="headerlink" href="#list-cs-settings" title="Permalink to this headline">¶</a></h3>
+<p>To discover new settings and while conducting research, sometimes it’s useful to extract possible all settings and their types from a Beacon sample.
+Use <code class="docutils literal notranslate"><span class="pre">list-cs-settings</span></code> to detect by brute-force the Cobalt Strike version and all settings/types:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; list-cs-settings &lt;path/to/file.<span class="o">{</span>exe,dll,bin,dmp<span class="o">}</span>&gt;
+</pre></div>
+</div>
+<p>This script produces JSON where the top-level key is the Cobalt Strike version number,
+which points to a mapping from setting number to information about that setting, including:</p>
+<ol class="arabic simple">
+<li><p>length (in bytes)</p></li>
+<li><p>offset from the beginning of the config section</p></li>
+<li><p>fundamental type (short, int, str)</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>Stroz Friedberg wants to work with the security community to make these open source tools the most comprehensive
+available for working with Cobalt Strike Beacons. If you encounter a bug, have research to share on Beacons,
+spot a typo in the documentation, want to request new functionality, etc. please submit an issue! If you want to contribute code
+or documentation to the project, please submit a PR and we will review it!  All contributions will be subject to the license included in the repo.</p>
+</div>
+<div class="section" id="libcsce-library">
+<h2>libcsce Library<a class="headerlink" href="#libcsce-library" title="Permalink to this headline">¶</a></h2>
+<p>The library contains two core modules:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="libcsce/libcsce.setting.html"><span class="doc">setting</span></a>: parsers for individual Beacon config settings</p></li>
+<li><p><a class="reference internal" href="libcsce/libcsce.parser.html"><span class="doc">parser</span></a>: primary Beacon config parser</p></li>
+</ol>
+<p>If you simply need to integrate parsing Beacon configs into another program,
+use the <a class="reference internal" href="libcsce/libcsce.parser.html#libcsce.parser.CobaltStrikeConfigParser" title="libcsce.parser.CobaltStrikeConfigParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">libcsce.parser.CobaltStrikeConfigParser</span></code></a> class. To conduct research on or parse individual settings,
+use the classes defined in the setting module. All modules contain extensive documentation regarding usage and
+research conducted to date of Beacon config settings.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="libcsce/libcsce.html">libcsce package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="libcsce/libcsce.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="libcsce/libcsce.error.html">libcsce.error module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce/libcsce.parser.html">libcsce.parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce/libcsce.setting.html">libcsce.setting module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce/libcsce.typing.html">libcsce.typing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="libcsce/libcsce.utils.html">libcsce.utils module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="libcsce/libcsce.html" class="btn btn-neutral float-right" title="libcsce package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021 Aon plc.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
