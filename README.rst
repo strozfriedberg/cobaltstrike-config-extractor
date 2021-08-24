@@ -72,7 +72,7 @@ You can specify a version manually via the ``-v`` flag to save cycles if you kno
 list-cs-settings
 -----------------
 
-To discover new settings and while conducting research, sometimes it's useful to extract possible all settings and their types from a Beacon sample.
+To discover new settings and while conducting research, sometimes it's useful to extract all possible settings and their types from a Beacon sample.
 Use ``list-cs-settings`` to detect by brute-force the Cobalt Strike version and all settings/types:
 
 .. code-block:: bash
