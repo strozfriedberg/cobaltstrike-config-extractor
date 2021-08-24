@@ -92,4 +92,5 @@ Contributing
 Stroz Friedberg wants to work with the security community to make these open source tools the most comprehensive
 available for working with Cobalt Strike Beacons. If you encounter a bug, have research to share on Beacons,
 spot a typo in the documentation, want to request new functionality, etc. please submit an issue! If you want to contribute code
-or documentation to the project, please submit a PR and we will review it!  All contributions will be subject to the license included in the repo.
+or documentation to the project, please submit a PR and we will review it!
+Note that all contributions will be subject to the `Apache-2.0 license <LICENSE>`_ included in the repo.
