@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path("..").resolve()))
 # -- Project information -----------------------------------------------------
 
 project = "libcsce"
-copyright = "2021 Aon plc"
+copyright = "2025 LevelBlue"
 author = "Noah Rubin"
 
 # The full version, including alpha/beta/rc tags
